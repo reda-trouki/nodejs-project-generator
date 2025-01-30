@@ -1,10 +1,10 @@
 {
-  "name": "create-nodejs-project",
+  "name": "nodearchgen",
   "version": "1.0.1",
   "description": "A CLI tool to generate a Node.js project with custom architecture.",
   "type": "module",
   "bin": {
-    "create-nodejs-project": "./cli.js"
+    "NodeProjectStarter": "./cli.js"
   },
   "main": "generateProject.js",
   "scripts": {
@@ -28,6 +28,10 @@
     "handlebars": "^4.7.8",
     "helmet": "^8.0.0",
     "inquirer": "^12.3.3",
+    "node": "file:",
+    "nodearchgen": "file:",
+    "nodeProjectStarter": "file:",
+    "NodeProjectStarter": "file:",
     "winston": "^3.17.0"
   },
   "devDependencies": {

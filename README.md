@@ -72,13 +72,13 @@ my-app/
 1. install the generator globally
 
    ```bash
-   npm install -g create-nodejs-project
+   npm install -g nodearchgen
     ```
 
 2. Generate a new project
 
     ```bash
-    npx create-nodejs-project
+    npx nodearchgen
     ```
 
 3. follow the prompt to enter the project name and description
