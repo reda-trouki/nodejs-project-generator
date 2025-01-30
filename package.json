@@ -10,9 +10,15 @@
   "scripts": {
     "start": "node generateProject.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "nodejs",
+    "project-generator",
+    "express",
+    "prisma",
+    "architecture"
+  ],
+  "author": "REDA TROUKI trouki.reda@gmail.com",
+  "license": "MIT",
   "dependencies": {
     "@prisma/client": "^6.3.0",
     "dotenv": "^16.4.7",

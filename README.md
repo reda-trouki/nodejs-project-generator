@@ -72,7 +72,7 @@ my-app/
 1. install the generator globally
 
    ```bash
-   npm install -g create-nodejs-project
+   npm install -g nodejs-project-generator
     ```
 
 2. Generate a new project
