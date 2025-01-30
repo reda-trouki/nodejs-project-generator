@@ -1,7 +1,7 @@
 {
-  "name": "nodejs-project-generator",
-  "version": "1.0.0",
-  "description": "",
+  "name": "create-nodejs-project",
+  "version": "1.0.1",
+  "description": "A CLI tool to generate a Node.js project with custom architecture.",
   "type": "module",
   "bin": {
     "create-nodejs-project": "./cli.js"
@@ -17,17 +17,17 @@
     "prisma",
     "architecture"
   ],
-  "author": "REDA TROUKI trouki.reda@gmail.com",
+  "author": "REDA TROUKI <trouki.reda@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "@prisma/client": "^6.3.0",
+    "create-nodejs-project": "file:",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "fs-extra": "^11.3.0",
     "handlebars": "^4.7.8",
     "helmet": "^8.0.0",
     "inquirer": "^12.3.3",
-    "nodejs-project-generator": "file:",
     "winston": "^3.17.0"
   },
   "devDependencies": {
