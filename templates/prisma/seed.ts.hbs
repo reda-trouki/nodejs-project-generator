@@ -1,0 +1,23 @@
+import { PrismaClient } from '@prisma/client';
+
+const prisma = new PrismaClient();
+
+async function main() {
+  // Placeholder for future seeding logic
+  // Example:
+  // await prisma.user.create({
+  //   data: {
+  //     email: 'alice@prisma.io',
+  //     name: 'Alice',
+  //   },
+  // });
+}
+
+main()
+  .catch((e) => {
+    console.error(e);
+    process.exit(1);
+  })
+  .finally(async () => {
+    await prisma.$disconnect();
+  });

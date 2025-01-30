@@ -1,0 +1,14 @@
+function errorHandler(err, req, res, next) {
+  console.error(err.stack);
+
+  if (err instanceof prisma.PrismaClientKnownRequestError) {
+    // Handle known Prisma errors (e.g., unique constraint violation)
+    if (err.code === 'P2002') {
+      return res.status(400).json({ message: 'Unique constraint failed' });
+    }
+  }
+
+  res.status(500).json({ message: 'Internal Server Error' });
+}
+
+export default errorHandler;
