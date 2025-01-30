@@ -1,19 +1,23 @@
 import express from 'express';
 import helmet from 'helmet';
 import { prisma } from './src/infrastructure/database/prismaClient.js';
+// Import routes
+import routes from './src/interfaces/routes/index.js';
+// Error handler middleware
+import errorHandler from './src/interfaces/middleware/errorHandler.js';
 
 const app = express();
 app.use(express.json());
 app.use(helmet());
 
-// Import routes
-const routes = require('./src/interfaces/routes');
+
+
 
 // Use routes
 app.use('/api', routes);
 
-// Error handler middleware
-const errorHandler = require('./src/interfaces/middleware/errorHandler');
+
+
 app.use(errorHandler);
 
 const PORT = process.env.PORT || 3000;
