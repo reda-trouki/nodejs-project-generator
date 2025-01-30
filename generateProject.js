@@ -33,6 +33,9 @@ async function createDirectoryContents(templatePath, newProjectPath, data) {
       await fs.ensureDir(destFilePath);
       await createDirectoryContents(srcFilePath, destFilePath, data);
     } else {
+      // Skip .gitkeep files during project generation
+      if (path.basename(item.name) === ".gitkeep") continue;
+
       if (path.extname(item.name) === ".hbs") {
         const outputFile = destFilePath.replace(".hbs", "");
         await generateFileFromTemplate(srcFilePath, outputFile, data);

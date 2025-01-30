@@ -1,0 +1,2 @@
+# Exclude .gitkeep files from npm package
+**/.gitkeep
